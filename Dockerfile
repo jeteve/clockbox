@@ -3,7 +3,7 @@ FROM busybox:latest
 COPY --chmod=755 <<EOF /app/run.sh
 #!/bin/sh
 while true; do
-  TZ='Europe/London' echo -ne "jeteve says: It is $(date +%T) in London.\\r"
+  TZ='Europe/London' echo  "jeteve says: It is $(date +%T) in London."
   sleep 1
 done
 EOF
